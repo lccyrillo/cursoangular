@@ -1,0 +1,40 @@
+1) entra em um diretorio e coloca o comando
+>> ng new nome_projeto
+--> vai criar o diretório e o projeto
+
+2) instala os pacotes necessários
+>> ng i nome_pacote --save
+
+
+>> npm i bootstrap --save
+>> npm i jquery --save
+>> npm i angular-imask --save
+>> npm i currency-formatter --save
+>> npm i moment --save
+>> npm i toastr --save
+>> npm i primeng --save
+>> npm i primeicons --save
+>> npm i chart.js --save
+>> npm i angular-in-memory-web-api --save
+
+3) inclui as seguintes dependencias no arquivo angular.json
+--> architect
+
+            "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/toastr/build/toastr.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/nova/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/chart.js/dist/chart.js"
+            ]
+
+4) roda a instalação e gera o servidor em ambiente de desenvolvimento
+>> ng s
+
+--> http://localhost:4200/
