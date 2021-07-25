@@ -1,3 +1,11 @@
+0) instalar o node (download internet)
+1) instalar o angular cli
+npm i -g @angular/cli
+
+2) Precisei tirar uma polçitica do windows
+Set-ExecutionPolicy Bypass -Scope CurrentUser
+
+
 1) entra em um diretorio e coloca o comando
 >> ng new nome_projeto
 --> vai criar o diretório e o projeto
