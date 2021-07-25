@@ -1,3 +1,4 @@
 git remote add origin https://github.com/lccyrillo/cursoangular.git
 git branch -M main
 git push -u origin main
+git push --set-upstream origin primeira_feature

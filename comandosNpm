@@ -46,3 +46,9 @@ Set-ExecutionPolicy Bypass -Scope CurrentUser
 >> ng s
 
 --> http://localhost:4200/
+
+5) criar um modulo e um componente:
+ng g m pages/categories --routing
+
+ng g c pages/categories/category-list
+ng g c pages/categories/category-form

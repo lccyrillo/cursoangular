@@ -1,0 +1,2 @@
+   docker build --pull --rm -f "Dockerfile" -t cursoangular:latest "."
+   docker container run --name docker_frontweb -p 80:80  cursoangular:latest
