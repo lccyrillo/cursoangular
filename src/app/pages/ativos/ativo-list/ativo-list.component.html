@@ -1,1 +1,47 @@
-<p>ativo-list works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container-fluid">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ativos</li>
+        </ol>        
+      </nav>
+    </div>
+</nav>
+
+
+
+<div class="container">
+  <div class="row align-items-start mb-4">
+
+    <div class="col align-self-start">
+        <h2 id="alignment">Ativos</h2>
+      </div>
+      <div class="col align-self-center"></div>
+      <div class="col align-self-end">
+        <a routerLink="new" class="btn btn-success float-right"> + Novo Ativo</a>
+      </div>
+</div>
+
+<table class="table table-hover">
+    <thead>
+        <tr class="bg-primary text-light">
+            <th>Ativos</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <strong>ITUB4</strong> <br>
+                <small>Itaú Unibanco</small>
+            </td>
+            <td>
+                <a [routerLink]="[12,'edit']" class="btn btn-outline-info btn-sm">Editar</a>
+            </td>
+        </tr>
+    </tbody>
+
+
+
+</table>
