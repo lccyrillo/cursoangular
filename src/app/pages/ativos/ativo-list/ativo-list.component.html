@@ -25,26 +25,17 @@
         </tr>
     </thead>
     <tbody>
-        <tr class="table-light">
+        <tr *ngFor="let ativo of ativos" class="table-light">
             <td>
                 <strong>ITUB4</strong> <br>
                 <small>Itaú Unibanco</small>
             </td>
             <td>
-                <a [routerLink]="[12,'edit']" class="btn btn-outline-info btn-sm">Editar</a>
+                <a [routerLink]="[ativo.id,'edit']" class="btn btn-outline-info btn-sm">Editar</a>
                 <a onclick="alert('Excluir')" class="btn btn-outline-danger btn-sm">Excluir</a>
             </td>
         </tr>
-        <tr class="table-secondary">
-            <td>
-                <strong>BBDC4</strong> <br>
-                <small>Bradesco</small>
-            </td>
-            <td>
-                <a [routerLink]="[12,'edit']" class="btn btn-outline-info btn-sm">Editar</a>
-                <a onclick="alert('Excluir')" class="btn btn-outline-danger btn-sm">Excluir</a>
-            </td>
-        </tr>
+       
 
     </tbody>
 

@@ -52,3 +52,7 @@ ng g m pages/categories --routing
 
 ng g c pages/categories/category-list
 ng g c pages/categories/category-form
+
+
+6) criar módulo de serviço
+ng g s pages/ativos/shared/ativo
