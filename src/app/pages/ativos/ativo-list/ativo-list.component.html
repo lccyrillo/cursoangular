@@ -27,12 +27,12 @@
     <tbody>
         <tr *ngFor="let ativo of ativos" class="table-light">
             <td>
-                <strong>ITUB4</strong> <br>
-                <small>Itaú Unibanco</small>
+                <strong>{{ativo.sigla}}</strong> <br>
+                <small>{{ativo.descricao_cnpj}} | {{ativo.nome}} </small>
             </td>
             <td>
                 <a [routerLink]="[ativo.id,'edit']" class="btn btn-outline-info btn-sm">Editar</a>
-                <a onclick="alert('Excluir')" class="btn btn-outline-danger btn-sm">Excluir</a>
+                <button (click)="deleteAtivo(ativo)" class="btn btn-outline-danger btn-sm">Excluir</button>
             </td>
         </tr>
        

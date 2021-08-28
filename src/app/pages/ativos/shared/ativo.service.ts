@@ -21,7 +21,7 @@ export class AtivoService {
 
 
   getById(id: number): Observable<Ativo> {
-    const url = '${this.apiPath}/${id}';
+    const url = `${this.apiPath}/${id}`;
     return this.http.get(url).pipe(
       catchError(this.handleError),
       map(this.jsonDataToAtivo)
@@ -36,7 +36,7 @@ export class AtivoService {
   }
 
   update(ativo: Ativo): Observable<Ativo> {
-    const url = '${this.apiPath}/${ativo.id}';
+    const url = `${this.apiPath}/${ativo.id}`;
     return this.http.put(url, ativo).pipe(
       catchError(this.handleError),
       map( () => ativo)
@@ -44,7 +44,11 @@ export class AtivoService {
    }
 
    delete (id: number): Observable<any> {
-    const url = '${this.apiPath}/${id}';
+    //alert(id);
+    //alert(this.apiPath);
+    const url = `${this.apiPath}/${id}`;
+
+    //alert(url);
     return this.http.delete(url).pipe(
       catchError(this.handleError),
       map( () => null)

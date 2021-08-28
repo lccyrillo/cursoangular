@@ -21,4 +21,13 @@ export class AtivoListComponent implements OnInit {
     )
   }
 
+  deleteAtivo(ativo: Ativo) {
+    const mustDelete = confirm('Deseja mesmo excluir esse item?')
+    if (mustDelete) {
+      this.ativoService.delete(ativo.id!).subscribe(
+        () => this.ativos = this.ativos.filter(element => element != ativo),
+        error => alert("Erro ao tentar excluir!")
+      )
+    }
+  }
 }

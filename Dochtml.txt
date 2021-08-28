@@ -1,0 +1,3 @@
+exemplo de mensagem de alerta no html
+
+<a onclick="alert('Excluir')" class="btn btn-outline-danger btn-sm">Teste</a>
